@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/orange"
+        android:orientation="vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNICODE"
+        android:textStyle="bold"
+        android:backgroundTint="@color/orange"
+        android:textSize="30dp"
+        android:layout_marginTop="-100dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="150dp"
+        android:drawableRight="@drawable/cart"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="offers"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="@android:color/transparent"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="-47dp"
+        android:text="electonics"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="-47dp"
+        android:text="fashion"
+        android:id="@+id/fasion"
+        android:textColor="#F4F1F1"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="-47dp"
+        android:text="home"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="-48dp"
+        android:text="more"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="16dp"
+        android:columnOrderPreserved="false">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/cycle"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/handbag2"
+            android:padding="10dp"
+            android:scaleType="centerCrop"/>
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/watch"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:scrollbarSize="@dimen/fab_margin"/>
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:src="@drawable/jewellery"
+            android:padding="10dp"
+            android:scaleType="centerCrop"/>
+
+
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/iconLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:src="@drawable/home"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:src="@drawable/categeries"
+                android:layout_margin="4dp"/>
+
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="32dp"
+                android:src="@drawable/faces"
+                android:layout_margin="8dp"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:src="@drawable/heart"
+                android:layout_margin="8dp"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:src="@drawable/notification"
+                android:layout_margin="8dp"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>
+
